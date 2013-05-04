@@ -19,6 +19,7 @@
     <cxf.version>2.7.4</cxf.version>
     <junit.version>4.11</junit.version>
     <jetty.version>9.0.2.v20130417</jetty.version>
+    <jackson.version>1.8.6</jackson.version>
   </properties>
 
   <dependencies>
@@ -43,6 +44,22 @@
       <groupId>org.apache.cxf</groupId>
       <artifactId>cxf-rt-frontend-jaxrs</artifactId>
       <version>${cxf.version}</version>
+    </dependency>
+    <!-- Jackson -->
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-core-asl</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-mapper-asl</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-jaxrs</artifactId>
+      <version>${jackson.version}</version>
     </dependency>
     <!-- Tests Dependencies -->
     <dependency>

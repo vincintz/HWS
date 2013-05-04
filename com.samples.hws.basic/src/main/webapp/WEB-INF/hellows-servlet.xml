@@ -29,6 +29,9 @@
       <ref bean="timeService" />
       <ref bean="personService" />
     </jaxrs:serviceBeans>
+    <jaxrs:providers>
+        <bean class="org.codehaus.jackson.jaxrs.JacksonJsonProvider"/>
+    </jaxrs:providers>
   </jaxrs:server>
 
 </beans>
