@@ -6,30 +6,30 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          metadata-complete="false">
 
-    <display-name>HelloWorld</display-name>
+  <display-name>HelloWorld</display-name>
 
-    <servlet>
-      <servlet-name>hellows</servlet-name>
-      <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-      <load-on-startup>1</load-on-startup>
-    </servlet>
+  <servlet>
+    <servlet-name>hellows</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
 
-    <servlet-mapping>
-      <servlet-name>hellows</servlet-name>
-      <url-pattern>/</url-pattern>
-    </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>hellows</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
 
-    <context-param>
-      <param-name>contextConfigLocation</param-name>
-      <param-value>/WEB-INF/hellows-servlet.xml</param-value>
-    </context-param>
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>/WEB-INF/hellows-servlet.xml</param-value>
+  </context-param>
 
-    <listener>
-      <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
 
-    <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
-    </welcome-file-list>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
 
 </web-app>
