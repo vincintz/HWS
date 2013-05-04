@@ -1,16 +1,21 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="
-                           http://www.springframework.org/schema/beans     
+       xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans     
                            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
                            http://www.springframework.org/schema/context 
-                           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+                           http://www.springframework.org/schema/context/spring-context-3.0.xsd
+                           http://cxf.apache.org/jaxrs
+                           http://cxf.apache.org/schemas/jaxrs.xsd">
+
+  <import resource="classpath:META-INF/cxf/cxf.xml"/>
+  <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
 
   <context:component-scan base-package="com.samples.hws.basic.controller" />
+  <context:component-scan base-package="com.samples.hws.basic.service" />
 
-  <bean
-      class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+  <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
     <property name="prefix">
       <value>/WEB-INF/pages/</value>
     </property>
@@ -18,5 +23,12 @@
       <value>.jsp</value>
     </property>
   </bean>
+
+  <jaxrs:server id="restContainer" address="/">
+    <jaxrs:serviceBeans>
+      <ref bean="timeService" />
+      <ref bean="personService" />
+    </jaxrs:serviceBeans>
+  </jaxrs:server>
 
 </beans>
