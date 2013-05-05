@@ -80,7 +80,9 @@
         <artifactId>jetty-maven-plugin</artifactId>
         <version>${jetty.version}</version>
         <configuration>
-          <contextPath>/${build.finalName}</contextPath>
+          <webApp>
+            <contextPath>/${build.finalName}</contextPath>
+          </webApp>
         </configuration>
       </plugin>
       <!-- Tomcat 7 plugin -->
