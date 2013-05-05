@@ -26,7 +26,7 @@
 
   <jaxrs:server id="restContainer" address="/">
     <jaxrs:serviceBeans>
-      <ref bean="timeService" />
+      <ref bean="pingService" />
       <ref bean="personService" />
     </jaxrs:serviceBeans>
     <jaxrs:providers>
