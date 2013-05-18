@@ -1,4 +1,4 @@
-package com.samples.hws.basic;
+package com.samples.hws.common;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

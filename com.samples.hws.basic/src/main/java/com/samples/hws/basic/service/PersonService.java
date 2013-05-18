@@ -12,6 +12,8 @@ import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.Response;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
+import com.samples.hws.common.Person;
+import com.samples.hws.common.PersonRepository;
 
 @Service("personService")
 @Path("/person")

@@ -7,6 +7,10 @@ import org.junit.Ignore;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import com.samples.hws.common.Person;
+import com.samples.hws.common.PersonRepository;
+import com.samples.hws.common.MockPersonRepository;
+
 @RunWith(JUnit4.class)
 public class MockPersonRepositoryTest {
     private PersonRepository repo = new MockPersonRepository();

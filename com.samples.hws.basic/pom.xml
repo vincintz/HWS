@@ -52,6 +52,14 @@
       <artifactId>jackson-jaxrs</artifactId>
       <version>${jackson.version}</version>
     </dependency>
+
+    <!-- project dependencies -->
+    <dependency>
+      <groupId>samples</groupId>
+      <artifactId>com.samples.hws.common</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+
     <!-- Tests Dependencies -->
     <dependency>
       <groupId>junit</groupId>
@@ -74,7 +82,7 @@
           <target>${java.version}</target>
         </configuration>
       </plugin>
-      <!-- -->
+      <!-- Download jetty-runner.jar -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
