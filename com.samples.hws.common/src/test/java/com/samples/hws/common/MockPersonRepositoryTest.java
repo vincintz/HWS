@@ -1,4 +1,4 @@
-package com.samples.hws.basic.service;
+package com.samples.hws.common;
 
 import static org.junit.Assert.assertTrue;
 
@@ -6,10 +6,6 @@ import org.junit.Test;
 import org.junit.Ignore;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-
-import com.samples.hws.common.Person;
-import com.samples.hws.common.PersonRepository;
-import com.samples.hws.common.MockPersonRepository;
 
 @RunWith(JUnit4.class)
 public class MockPersonRepositoryTest {

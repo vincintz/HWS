@@ -1,7 +1,9 @@
 package com.samples.hws.basic.service;
 
 import java.util.List;
+
 import javax.annotation.PostConstruct;
+
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -9,9 +11,12 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.WebApplicationException;
-import javax.ws.rs.core.Response;
+
+import javax.ws.rs.core.Response.Status;
+
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import com.samples.hws.common.Person;
 import com.samples.hws.common.PersonRepository;
 
@@ -39,7 +44,7 @@ public class PersonService {
     public Person get(@PathParam("id") final long id) {
         final Person person = repo.get(id);
         if (person == null) {
-            throw new WebApplicationException(Response.Status.NOT_FOUND);
+            throw new WebApplicationException(Status.NOT_FOUND);
         }
         return person;
     }
