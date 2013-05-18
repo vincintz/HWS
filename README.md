@@ -1,12 +1,13 @@
 # HWS - HelloWebServices
 
-## Contents
+## Projects
 * com.samples.hws.common
 * com.samples.hws.basic
 
 ## Clone
 
 > git clone git://github.com/vincintz/HWS.git
+
 > cd HWS
 
 ## Build
@@ -15,4 +16,4 @@
 
 ## Run
 
-> java -jar target/dependencies/jetty-runner.jar target/dependencies/*.war
+> java -jar target/dependency/jetty-runner.jar target/dependency/*.war
