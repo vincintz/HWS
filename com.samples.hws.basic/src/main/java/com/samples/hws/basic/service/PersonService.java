@@ -8,6 +8,8 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.WebApplicationException;
+import javax.ws.rs.core.Response;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -33,7 +35,11 @@ public class PersonService {
     @Path("/{id}")
     @Produces("application/json")
     public Person get(@PathParam("id") final long id) {
-        return repo.get(id);
+        final Person person = repo.get(id);
+        if (person == null) {
+            throw new WebApplicationException(Response.Status.NOT_FOUND);
+        }
+        return person;
     }
 
     @POST
