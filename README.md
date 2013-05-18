@@ -1,8 +1,14 @@
 # HWS - HelloWebServices
 
+Doesn't do much, atm.
+
 ## Projects
 * com.samples.hws.common
 * com.samples.hws.basic
+
+## Online Demo
+
+> http://hellows.herokuapp.com/
 
 ## Clone
 
