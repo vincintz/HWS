@@ -4,7 +4,7 @@ Doesn't do much, atm.
 
 ## Projects
 * com.samples.hws.common
-* com.samples.hws.basic
+* com.samples.hws.service
 
 ## Online Demo
 

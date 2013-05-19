@@ -1,4 +1,4 @@
-package com.samples.hws.basic.service;
+package com.samples.hws.service;
 
 import java.util.ArrayList;
 import java.util.List;

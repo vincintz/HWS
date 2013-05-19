@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>samples</groupId>
-  <artifactId>com.samples.hws.basic</artifactId>
+  <artifactId>com.samples.hws.service</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>com.samples.hws.basic</name>
+  <name>com.samples.hws.service</name>
   <url>http://maven.apache.org</url>
 
   <properties>

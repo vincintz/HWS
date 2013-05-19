@@ -12,9 +12,7 @@
   <import resource="classpath:META-INF/cxf/cxf.xml"/>
   <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
 
-  <context:component-scan base-package="com.samples.hws.basic.controller" />
-  <context:component-scan base-package="com.samples.hws.basic.service" />
-  <context:component-scan base-package="com.samples.hws.common" />
+  <context:component-scan base-package="com.samples.hws.service" />
 
   <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
     <property name="prefix">

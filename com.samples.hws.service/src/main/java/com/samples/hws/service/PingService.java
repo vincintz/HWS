@@ -1,4 +1,4 @@
-package com.samples.hws.basic.service;
+package com.samples.hws.service;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

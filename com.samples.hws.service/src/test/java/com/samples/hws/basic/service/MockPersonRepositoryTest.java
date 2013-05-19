@@ -1,4 +1,4 @@
-package com.samples.hws.basic.service;
+package com.samples.hws.service;
 
 import static org.junit.Assert.assertTrue;
 
