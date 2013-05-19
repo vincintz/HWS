@@ -1,6 +1,7 @@
-package com.samples.hws.common;
+package com.samples.hws.basic.service;
 
 import java.util.List;
+import com.samples.hws.common.Person;
 
 public interface PersonRepository {
     List<Person> list();

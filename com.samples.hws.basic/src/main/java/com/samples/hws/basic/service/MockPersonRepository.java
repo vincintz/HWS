@@ -1,8 +1,9 @@
-package com.samples.hws.common;
+package com.samples.hws.basic.service;
 
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.stereotype.Component;
+import com.samples.hws.common.Person;
 
 @Component
 public class MockPersonRepository implements PersonRepository {
