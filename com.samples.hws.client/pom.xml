@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>samples</groupId>
-  <artifactId>com.samples.hws.service</artifactId>
+  <artifactId>com.samples.hws.client</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>com.samples.hws.service</name>
+  <name>com.samples.hws.client</name>
   <url>http://maven.apache.org</url>
 
   <parent>
@@ -34,26 +34,12 @@
       <artifactId>spring-webmvc</artifactId>
       <version>${spring.version}</version>
     </dependency>
-    <!-- CXF JaxRS frontend -->
-    <dependency>
-      <groupId>org.apache.cxf</groupId>
-      <artifactId>cxf-rt-frontend-jaxrs</artifactId>
-      <version>${cxf.version}</version>
-    </dependency>
-    <!-- Jackson -->
-    <dependency>
-      <groupId>org.codehaus.jackson</groupId>
-      <artifactId>jackson-jaxrs</artifactId>
-      <version>${jackson.version}</version>
-    </dependency>
-
     <!-- project dependencies -->
     <dependency>
       <groupId>samples</groupId>
       <artifactId>com.samples.hws.common</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
-
     <!-- Tests Dependencies -->
     <dependency>
       <groupId>junit</groupId>
@@ -64,7 +50,7 @@
   </dependencies>
 
   <build>
-    <finalName>hellows</finalName>
+    <finalName>root</finalName>
     <plugins>
       <!-- Maven Java Compiler Plugin -->
       <plugin>
@@ -74,15 +60,6 @@
         <configuration>
           <source>${java.version}</source>
           <target>${java.version}</target>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>2.3</version>
-        <configuration>
-          <outputDirectory>target/dependency</outputDirectory>
-          <warName>hellows</warName>
         </configuration>
       </plugin>
       <!-- Jetty plugin for running Jetty from Maven -->

@@ -27,6 +27,7 @@
   <modules>
     <module>com.samples.hws.common</module>
     <module>com.samples.hws.service</module>
+    <module>com.samples.hws.client</module>
   </modules>
 
   <build>
@@ -47,13 +48,6 @@
 	          <artifactId>jetty-runner</artifactId>
                   <version>${jetty.version}</version>
                   <destFileName>jetty-runner.jar</destFileName>
-                </artifactItem>
-                <artifactItem>
-	          <groupId>samples</groupId>
-	          <artifactId>com.samples.hws.service</artifactId>
-                  <version>${project.version}</version>
-                  <type>war</type>
-                  <destFileName>hellows.war</destFileName>
                 </artifactItem>
               </artifactItems>
             </configuration>
