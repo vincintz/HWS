@@ -25,6 +25,7 @@
   </properties>
 
   <modules>
+    <module>com.samples.hws.runner</module>
     <module>com.samples.hws.common</module>
     <module>com.samples.hws.service</module>
     <module>com.samples.hws.client</module>
@@ -32,27 +33,15 @@
 
   <build>
     <plugins>
-      <!-- Download jetty-runner.jar -->
+      <!-- Maven Java Compiler Plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <version>2.7</version>
-        <executions>
-          <execution>
-            <phase>package</phase>
-            <goals><goal>copy</goal></goals>
-            <configuration>
-              <artifactItems>
-                <artifactItem>
-	          <groupId>org.eclipse.jetty</groupId>
-	          <artifactId>jetty-runner</artifactId>
-                  <version>${jetty.version}</version>
-                  <destFileName>jetty-runner.jar</destFileName>
-                </artifactItem>
-              </artifactItems>
-            </configuration>
-          </execution>
-        </executions>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.0</version>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+        </configuration>
       </plugin>
     </plugins>
   </build>
