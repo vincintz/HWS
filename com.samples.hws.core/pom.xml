@@ -13,8 +13,9 @@
 
   <parent>
     <groupId>samples</groupId>
-    <artifactId>com.samples.hws</artifactId>
+    <artifactId>com.samples.hws.config</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <relativePath>../com.samples.hws.config/pom.xml</relativePath>
   </parent>
 
   <dependencies>
