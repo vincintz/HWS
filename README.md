@@ -3,7 +3,7 @@
 Doesn't do much, atm.
 
 ## Projects
-* com.samples.hws.common
+* com.samples.hws.core
 * com.samples.hws.service
 
 ## Online Demo

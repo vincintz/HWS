@@ -17,7 +17,7 @@ import javax.ws.rs.core.Response.Status;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.samples.hws.common.Person;
+import com.samples.hws.core.Person;
 
 @Service("personService")
 @Path("/person")

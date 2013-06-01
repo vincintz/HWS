@@ -1,4 +1,4 @@
-package com.samples.hws.common;
+package com.samples.hws.core;
 
 public class Person {
     private long id;

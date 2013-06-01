@@ -3,7 +3,7 @@ package com.samples.hws.service;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.stereotype.Component;
-import com.samples.hws.common.Person;
+import com.samples.hws.core.Person;
 
 @Component
 public class MockPersonRepository implements PersonRepository {
