@@ -7,12 +7,12 @@ Doesn't do much, atm.
 * com.samples.hws.core
 * com.samples.hws.service
 
----
++++
 ## Online Demo
 
 > http://hellows.herokuapp.com/
 
----
++++
 ## Clone
 
 > git clone git://github.com/vincintz/HWS.git
