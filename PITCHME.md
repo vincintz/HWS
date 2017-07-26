@@ -14,7 +14,6 @@ Doesn't do much, atm.
 
 +++
 ## Clone
-
 ```
 > git clone git://github.com/vincintz/HWS.git
 > cd HWS
@@ -25,9 +24,9 @@ Doesn't do much, atm.
 ```
 > mvn clean install
 ```
----
-## Run
 
++++
+## Run
 ```
 > java -jar \
       com.samples.hws.runner/target/dependency/jetty-runner.jar \
