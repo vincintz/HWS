@@ -32,3 +32,29 @@ Doesn't do much, atm.
       com.samples.hws.runner/target/dependency/jetty-runner.jar \
       --port 8080 com.samples.hws.runner/target/*.war
 ```
+
+---
+## Code presentation
+```
+    private List<App> filterUserApps(List<App> apps) throws GenericException {
+        log.debug("Search for all apps");
+
+        UserModel user = permissionsChecker.getUser();
+
+        log.debug("Found apps");
+
+        if (user.isSystemAdmin()) {
+            return apps;
+        }
+
+        return apps.stream().filter(app -> (
+                app.getName().equals("CUSM") && permissionsChecker.isAdminInAnyApp(user))
+                        || user.getAppDetailsByApp(app.getName()) != null
+        ).collect(Collectors.toList());
+    }
+```
+@[1](Declare function)
+@[2,6](Debug log)
+@[4](Declare user)
+@[8-10](If IsAdmin)
+@[12-15](Refactor!)
