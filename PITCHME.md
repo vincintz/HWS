@@ -12,14 +12,14 @@ Doesn't do much, atm.
 
 * http://hellows.herokuapp.com/
 
-+++
+---
 ## Clone
 ```
 > git clone git://github.com/vincintz/HWS.git
 > cd HWS
 ```
 
----
++++
 ## Build
 ```
 > mvn clean install
