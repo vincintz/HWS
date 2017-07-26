@@ -29,5 +29,7 @@ Doesn't do much, atm.
 ## Run
 
 ```
-> java -jar com.samples.hws.runner/target/dependency/jetty-runner.jar --port 8080 com.samples.hws.runner/target/*.war
+> java -jar \
+      com.samples.hws.runner/target/dependency/jetty-runner.jar \
+      --port 8080 com.samples.hws.runner/target/*.war
 ```
